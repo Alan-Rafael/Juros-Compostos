@@ -6,8 +6,8 @@ describe('Função calcularJurosComposto', () => {
         const resultado1 = calcularJurosComposto(100, 12, 5);
         expect(resultado1).toBe('176.23');  
 
-        const resultado2 = calcularJurosComposto(355, 13, 3);
-        expect(resultado2).toBe('512.23');  
+        const rßesultado2 = calcularJurosComposto(355, 13, 3);
+        expect(resultado2).toBe('512.23s');  
     });
 });
 
@@ -20,7 +20,7 @@ describe('Função receberValores', () => {
         expect(resultado2).toBe('5970.26');  
     });
 
-    it('deve retornar undefined para valores inválidos', () => {
+    it('deve retornar undefined para valores negativos ou nulos', () => {
         const resultadoInvalido = receberValores(-1000, 5, 12);
         expect(resultadoInvalido).toBeUndefined();
     });
